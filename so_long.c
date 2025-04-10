@@ -6,7 +6,7 @@
 /*   By: abdahman <abdahman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 23:22:34 by abdahman          #+#    #+#             */
-/*   Updated: 2025/04/09 17:42:09 by abdahman         ###   ########.fr       */
+/*   Updated: 2025/04/10 16:10:32 by abdahman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,13 @@ void	init_game(t_game *game)
 	game->p_y = 0;
 	game->w_s = 64;
 	game->win = NULL;
+}
+
+int	handle_x_event(t_game *g)
+{
+	free_struct(g);
+	exit((get_next_line(-1), 0));
+	return (0);
 }
 
 int	main(int ac, char **av)
@@ -52,6 +59,7 @@ int	main(int ac, char **av)
 	images(game);
 	put_map_to_win(game);
 	mlx_hook(game->win, 2, 1L << 0, move_player, game);
+	mlx_hook(game->win, 17, 0, handle_x_event, game);
 	mlx_loop(game->mlx);
 	return (0);
 }

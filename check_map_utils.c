@@ -6,7 +6,7 @@
 /*   By: abdahman <abdahman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:58:37 by abdahman          #+#    #+#             */
-/*   Updated: 2025/04/09 17:49:30 by abdahman         ###   ########.fr       */
+/*   Updated: 2025/04/10 14:32:28 by abdahman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,11 +93,11 @@ char	**check_edges(char *name, int *numlines, t_game *g)
 	*numlines = count_lines(fd, NULL);
 	close(fd);
 	if (numlines == 0)
-		free_and_exit(NULL, "Error\nempty file\n", g);
+		free_and_exit(NULL, "empty file\n", g);
 	fd = check_open(name, g);
 	map = malloc(sizeof(char *) * (*numlines + 1));
 	if (!map)
-		free_and_exit(map, "Error\nmalloc failed\n", g);
+		free_and_exit(map, "malloc failed\n", g);
 	while (i < *numlines)
 	{
 		map[i] = get_next_line(fd);

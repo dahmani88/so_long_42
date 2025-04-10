@@ -6,7 +6,7 @@
 /*   By: abdahman <abdahman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 18:26:25 by abdahman          #+#    #+#             */
-/*   Updated: 2025/04/09 17:54:43 by abdahman         ###   ########.fr       */
+/*   Updated: 2025/04/10 15:51:36 by abdahman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	check_len(char **lines, t_game *g)
 {
-	int (len2), len1, i = 1, c = 0, numlines = count_lines(0, lines);
+	int (len2), len1, i = 1, c = 0, numlines;
 	i = 0;
 	len1 = ft_strlen(lines[0]);
 	numlines = count_lines(0, lines);

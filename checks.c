@@ -6,7 +6,7 @@
 /*   By: abdahman <abdahman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 13:29:49 by abdahman          #+#    #+#             */
-/*   Updated: 2025/04/09 17:57:04 by abdahman         ###   ########.fr       */
+/*   Updated: 2025/04/10 14:19:36 by abdahman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int	check_open(char *str, t_game *g)
 
 	fd = open(str, O_RDONLY);
 	if (fd < 0)
-		free_and_exit(NULL, "Error\nno exist file\n", g);
+		free_and_exit(NULL, "no exist file\n", g);
 	return (fd);
 }
 
