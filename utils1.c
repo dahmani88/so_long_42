@@ -6,7 +6,7 @@
 /*   By: abdahman <abdahman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 00:24:16 by abdahman          #+#    #+#             */
-/*   Updated: 2025/04/10 13:51:57 by abdahman         ###   ########.fr       */
+/*   Updated: 2025/04/10 16:49:35 by abdahman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	**get_map(char **line, t_game *g)
 
 void	get_win_size(char **lines, int *x, int *y)
 {
-	*x = ft_strlen(lines[0]) - 1;
+	*x = ft_strlen(lines[0]);
 	while (lines[*y])
 		(*y)++;
 	*y *= 64;

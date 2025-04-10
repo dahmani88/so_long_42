@@ -6,14 +6,14 @@
 /*   By: abdahman <abdahman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 17:34:49 by abdahman          #+#    #+#             */
-/*   Updated: 2025/04/09 17:57:31 by abdahman         ###   ########.fr       */
+/*   Updated: 2025/04/10 17:59:51 by abdahman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 # include "get_next_line.h"
-# include "/home/abdahman/Desktop/minilibx-linux/mlx.h"
+# include "/path/minilibx-linux/mlx.h" // Change this to suit your library path :/
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
