@@ -7,7 +7,7 @@ SRC = check_map_utils2.c  check_map_utils3.c  check_map_utils.c  checks.c  get_n
 	get_next_line_utils.c  so_long.c  utils1.c  utils2.c move_player.c ft_putnbr.c
 OBJ = $(SRC:.c=.o)
 
-MLX_FLAGS = -L/path/minilibx-linux -lmlx -lXext -lX11 -lm # Change this to suit your library path :/ 
+MLX_FLAGS = -L/path/minilibx-linux -lmlx -lXext -lX11 -lm
 
 all: $(NAME)
 

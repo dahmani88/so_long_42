@@ -6,7 +6,7 @@
 /*   By: abdahman <abdahman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 23:22:34 by abdahman          #+#    #+#             */
-/*   Updated: 2025/04/10 17:08:41 by abdahman         ###   ########.fr       */
+/*   Updated: 2025/04/10 21:46:19 by abdahman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	main(int ac, char **av)
 	game->win = mlx_new_window(game->mlx, x, y, "SO_LONG BY ME ...");
 	images(game);
 	put_map_to_win(game);
-	mlx_hook(game->win, 2, 1L << 0, move_player, game);
+	mlx_hook(game->win, 2, 1L >> 0, move_player, game);
 	mlx_hook(game->win, 17, 0, handle_x_event, game);
 	mlx_loop(game->mlx);
 	return (0);
